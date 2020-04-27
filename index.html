@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/flip.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/app/observable.js"></script>
+    <script src="js/app/card.js"></script>
+    <script src="js/app/deck.js"></script>
+    <script src="js/app/game.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "css/app.css" />
+  </head>
+  <body>
+    <script>
+
+      $( document ).ready(function() {
+        window.observables = {
+          cardDisclosed: new Observervable()
+        };
+
+        var deck = new Deck({suits: ['HEARTS', 'SPADES']})
+        var game = new Game(deck).start();
+      })
+    </script>
+  </body>
+</html>

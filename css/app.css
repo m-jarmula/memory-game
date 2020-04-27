@@ -1,0 +1,22 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card {
+  height: 120px;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+
+.card-img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
